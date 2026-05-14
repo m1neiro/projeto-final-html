@@ -4,20 +4,27 @@
     box-sizing: border-box;
 }
 
- 
-header {
-    color: rgb(77, 77, 77);
-    text-align: center;
-    margin-top: 40px;
-}
-header p{
-    max-width: 65ch;
-    margin: 55px auto;
-    line-height: 1.5;
-    font-size: 1.2rem;
+.nav {
+    display: flex;
+    width: 1367px;
+    height: 141px;
+    padding: 64px;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
 }
 
 
+
+nav {
+    display: flex;
+    gap: 4px;
+
+}
+.logo-cabecalho img {
+    height: 80px;
+    width: auto;
+}
 .titulo-pagina-principal{
 text-align: center;
 font-size: 3rem;
@@ -30,14 +37,19 @@ margin-top: 400px;
 
 
 .titulo-principal {
- 
-    background-color: #e62e2e;
-    padding: 100px 0px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-  
-   
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 800px;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/assets/img/januaria.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border-radius: 20px;
+    margin: 40px auto;
+    max-width: 1600px;
+
 }
 
 .texto-principal {
@@ -48,28 +60,9 @@ max-width: 1200px;
 margin: 0 auto;
 }
 
-.circulo-imagem {
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    border: 15px solid #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding:0px;
-    flex-shrink: 0;
-    overflow: hidden;
-}
-
-.circulo-imagem img {
-width: 100%;
-height: 100%;
-
-}
 
 .paragrafo-principal  {
     flex: 1.5;   
-    background-color: #000000;
     padding: 60px 80px;
     border-radius: 200px 100px;
     display: flex;
@@ -81,6 +74,7 @@ height: 100%;
    font-size: 1.1rem;
    line-height: 1.8;
    text-align: left;
+   font-family: 'Montserrat', sans-serif;
 }
 
 .fundo-imagem{
@@ -97,18 +91,22 @@ height: 100%;
 }
 
 .titulo-video {
+
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
     width: 90%;
     max-width: 900px;
+    margin: 0 auto; 
+}
     
-   }
+   
 
  
  
 .titulo-video h2 {
+  
     color: #222222;
     font-size: 2.5rem;
      text-transform: uppercase;
@@ -132,11 +130,11 @@ height: 100%;
 
 
 
+.secao-video {
+    padding: 100px 20px;
+    background-color: #c7490f;
 
-
-
-
-
+}
 
 .banner img{
     max-width: 100%;
